@@ -1,0 +1,341 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "Hye",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hello, thanks for visiting our website. My name is Bot Catto. Do you need any help for your cat?",
+        "Hi there, this is bot named Catto that will help you to consult your cat! What can I do for you?",
+        "Hi there! Catto bot is here to assist you. How may I help you?"
+      ]
+
+    },
+    {
+      "tag": "yes",
+      "patterns": ["Yes"],
+      "responses": [
+        "Please choose your cat main symptoms:<br>[Type and send the option]<br>-Redness<br>-Hair loss<br>-Swelling",
+        "You came to the right place! How is your cat is doing right now?Please choose your cat main symptoms:<br>[Type and send the option]<br>-Redness<br>-Hair loss<br>-Swelling"
+      ]
+    },
+
+    {
+      "tag": "sick",
+      "patterns": [
+       "I want to consult my cat",
+        "My cat is sick",
+        "My cat has some issues and problems",
+        "My cat is having some health issues",
+        "Hi my cat is sick",
+        "Hello my cat is sick",
+        "My cat looks sick and not healthy",
+        "Hye my cat has health issues"
+      ],
+      "responses":  [
+        "Please choose your cat main symptoms:<br>[Type and send the option]<br>-Redness<br>-Hair loss<br>-Swelling?",
+        "You came to the right place! How is your cat is doing right now?Please choose your cat main symptoms:<br>[Type and send the option]<br>-Redness<br>-Hair loss<br>-Swelling"
+
+      ]
+    },
+
+
+    {
+      "tag": "Redness",
+      "patterns": [
+       "Redness",
+        "My cat is facing some redness",
+        "Redness on the skin"
+
+      ],
+      "responses":  [
+        "Which part of affected area involved? Choose below:<br>[Type and send the option]<br>-Ear<br>-Paw and legs<br>-Head and face<br>-Others"
+      ]
+    },
+{
+      "tag": "Hair loss",
+      "patterns": [
+       "Hair loss",
+        "My cat has hair loss",
+        "Hair loss only"
+
+      ],
+      "responses":  [
+        "Which part of affected area involved? Choose below:<br>[Type and send the option]<br>-Ear<br>-Paw and legs<br>-Head and face<br>-Others"
+      ]
+    },
+
+
+    {
+      "tag": "Ear",
+      "patterns": [
+        "Ear",
+        "My cat's ear"
+
+      ],
+      "responses":  [
+    "Does your cat keep scratch its ear? If yes, how often?<br>[Type and send the option]<br>-Frequent<br>-Not frequent",
+        "Does your cat keep feeling itchy on its ear? If yes, how often?<br>[Type and send the option]<br>-Frequent<br>-Not frequent"
+
+      ]
+    },
+
+
+    {
+      "tag": "Ear_frequent",
+      "patterns": [
+        "Frequent",
+        "Regularly"
+
+      ],
+      "responses": [
+        "Is there any bad smell come from the affected area? If yes, how can you describe the smell?<br>[Type and send the option]<br>-Bad odour<br>-Fungal odour",
+        "Usually, redness and itchiness can cause that area smelly. Does the affected area smell like fungal odor or just bad odour.<br>[Type and send the option]<br>-Bad odour<br>-Fungal odour"
+      ]
+    },
+
+
+    {
+      "tag": "NotFreq",
+      "patterns": [
+        "Not Frequent",
+        "Not regular",
+        "Not really frequent",
+        "Not too much"
+
+      ],
+      "responses": [
+        "What other issues your cat is facing? ",
+        "What other symptoms your cat is having?"
+      ]
+    },
+  {
+      "tag": "No_symptoms",
+      "patterns": [
+        "Nothing",
+        "No symptoms",
+        "I have no symptoms to tell",
+        "My cat doesn't have other symptoms"
+
+      ],
+      "responses": [
+        "I think your cat is still in good condition.",
+        "Then you don't have to worry. Your cat is still healthy. You can reach for professional "
+      ]
+    },
+
+    {
+      "tag": "bad_odor_ear",
+      "patterns": [
+        "Bad odour",
+        "Bad odor",
+        "Just smell bad"
+
+
+      ],
+      "responses": [
+        "Looks like something inside the ear canal has produce the odour. Does the ear canal appear:<br>[Type and send the option]<br>-Dark and dry<br>-Clean and pale pink"
+      ]
+    },
+
+      {
+      "tag": "Dark_dry",
+      "patterns": [
+        "Dark and dry",
+        "Dry and dark"
+
+      ],
+      "responses": [
+        "Based on the symptoms you have described, it sounds like your cat may be suffering from an ear mite infestation.<br>Ear mites, also known as Otodectes cynotis, are tiny, spider-like parasites that live in the ear canal of cats. They are highly contagious and can be easily transmitted from one cat to another through close contact"
+      ]
+    },
+
+       {
+      "tag": "normal_palepink",
+      "patterns": [
+        "Clean and pale pink"
+
+      ],
+      "responses": [
+        "If it does, I can assure that your cat’s ear is in a good condition. If you have doubt regarding the issue, you can check on vet specialist. We have services that include finding nearest veterinary clinics near you. Check it out on our other services."
+      ]
+    },
+       {
+      "tag": "others",
+      "patterns": [
+       "Paw and legs",
+	    "Head and face",
+        "Tail",
+        "Others"
+
+      ],
+      "responses": [
+        "Does your cat feels itchy around the affected area? If yes, how often?<br>[Type and send the option]<br>-Frequent<br>-Not frequent",
+          "Redness around that area can also cause itchiness. Does your cat facing this issue? If yes, how often?<br>[Type and send the option]<br>-Frequent<br>-Not frequent"
+      ]
+    },
+
+    {
+      "tag": "fungal_odor",
+      "patterns": [
+        "Fungal odour",
+        "Fungal odor"
+
+      ],
+      "responses": [
+        "Fungal odour might caused by fungus. Is the skin appears:<br>-Bald and patches<br>-Smooth and clean",
+        "Oh oh! it might caused by fungus itself. Does the skin appears:<br>-Bald and patches<br>-Smooth and clean"
+      ]
+    },
+
+    {
+      "tag": "Bald_patches",
+      "patterns": [
+
+        "Bald and patches",
+       "Bald with patches",
+        "Bald"
+
+      ],
+      "responses": [
+        "Hair loss might be the cause of it. Can you tell me the shape of the hair loss patches?<br>[Type and send the option]<br>-Ring shape<br>-Scatter shape"
+      ]
+    },
+    {
+      "tag": "ringworm",
+      "patterns": [
+
+        "Ring shape",
+        "Ring shape patches"
+      ],
+      "responses": [
+        "Based on the symptoms you've described, it sounds like your cat may be suffering from a ringworm infection. Ringworm, also known as dermatophytosis, is a fungal infection that affects the skin of cats. The fungus that causes ringworm infects the hair shafts and hair follicles of the affected area, causing hair loss and ring-shaped patches around the skin. The affected areas may also be scaly, red and inflamed<br>If you have doubt regarding the issue, you can check on vet specialist. We have services that include finding nearest veterinary clinics near you. Check it out on our other services."
+      ]
+
+
+    },
+    {
+      "tag": "Smooth_clean",
+      "patterns": [
+        "Smooth and clean"
+
+      ],
+      "responses": [
+        "Based on your symptoms, I can assure that your cat condition is still good. If you have doubt regarding the issue, you can check on vet specialist. We have services that include finding nearest veterinary clinics near you. Check it out on our other services."
+      ]
+    },
+
+           {
+      "tag": "Swelling_hairloss",
+      "patterns": [
+        "Swelling",
+        "Hairloss"
+      ],
+      "responses": [
+        "Does the affected area appear:<br>[Type and send the option]<br>-Hair loss and scabs<br>-Hair loss and patches<br>-Clean and smooth"
+
+      ]
+    },
+
+     {
+      "tag": "hairloss_scabs",
+      "patterns": [
+        "Hair loss and scabs"
+      ],
+      "responses": [
+        "Oh no. If it has scabs, it might be painful. There might be due to the swelling. Does your cat appears:<br>-Fatigues<br>-Active"
+
+      ]
+    },
+         {
+      "tag": "fatigues",
+      "patterns": [
+        "Fatigue"
+      ],
+      "responses": [
+        "I see. Does your cat skin has some skin lessions? If does, what it looks like?<br>[Type and send the option/Type other symptoms]<br>-Discolored patches and raise bumps<br>-No it looks normal"
+      ]
+    },
+
+       {
+      "tag": "Scatter_shape",
+      "patterns": [
+        "Scatter and shape",
+        "Scatter around",
+        "Scatter"
+      ],
+      "responses": [
+        "I see. Does your cat skin has some skin lessions? If does, what does it looks like?<br>[Type and send the option/Type other symptoms]<br>-Discolored patches and raise bumps<br>-No it looks normal"
+      ]
+    },
+
+           {
+      "tag": "sneezing",
+      "patterns": [
+        "Sneezing non-stop",
+        "My cat keep sneezing",
+        "Sneezing"
+      ],
+      "responses": [
+        "Sorry, I can ?<br>[Type and send the option/Type other symptoms]<br>-Discolored patches and raise bumps<br>-No it looks normal"
+      ]
+    },
+         {
+      "tag": "discolor_patches",
+      "patterns": [
+
+        "Discolored patches and raise bumps",
+         "Discoulored patches",
+        "raise bumps",
+          "pacthes bumps"
+      ],
+      "responses": [
+        "Hmm..based on your symptoms, it sounds like your cat may be suffering from a ‘Feline Leprosy’.<br>Feline leprosy, also known as Mycobacterium leprae infection, is a bacterial infection that affects cats. It is caused by the bacterium Mycobacterium leprae, which is closely related to the bacterium that causes leprosy in humans.<br>If you have doubt regarding the issue, you can check on vet specialist. We have services that include finding nearest veterinary clinics near you.<br><br>Check it out on our other services."
+
+      ]
+    },
+    {
+      "tag": "looks_normal",
+      "patterns": [
+        "No. It looks normal"
+      ],
+      "responses": [
+        "If it does, I can assure that your cat is in a good condition. If you has doubt regarding the issue, you can check on vet specialist. We have services that include finding nearby veterinary clinics near you. Check it out on our other services."
+
+      ]
+    },
+
+        {
+      "tag": "active",
+      "patterns": [
+        "Active"
+      ],
+      "responses": [
+        "If it does, I can assure that your cat is in a good condition. If you has doubt regarding the issue, you can check on vet specialist. We have services that include finding nearby veterinary clinics near you. Check it out on our other services."
+      ]
+    },
+       {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye", "Byebye", "Okay"],
+      "responses": [
+        "See you later, thanks for visiting!",
+        "Goodbye! Have a nice day. I had fun chatting with you",
+        "Bye! Come back again soon.",
+        "Bye! Nice to chat with you"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!", "Okay thank you", "Okay thanks"],
+      "responses": ["Happy to help!", "Any time! Come back again soon.", "My pleasure! See you later."]
+    }
+
+
+  ]
+}

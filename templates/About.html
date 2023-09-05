@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+
+    <script src="https://kit.fontawesome.com/ce3b6c6c08.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+ <section class="header">
+     <nav>
+         <a href = "home"><img src = "{{ url_for('static', filename='images/CattoLogo.png') }}"></a>
+         <div class="nav-links" id="navLinks">
+             <ul>
+                   <li><a href="/home">Home</a></li>
+                     <li><a href="/About">About</a></li>
+                     <li><a href="/Content">Content</a></li>
+                 <li><a href="/">Logout</a></li>
+             </ul>
+         </div>
+
+     </nav>
+
+     <div class = "text-box">
+         <h1>ABOUT US</h1>
+         <p>Catto Care is a website known for providing instant services for all cat owners around the world.<br>You can try not only chat with the Ai chatbot but also
+         scan and predict your cat's health issue by uploading the image.<br>If you are looking for instant services website that you can trust, you have come to the right place. </p>
+         <!--a href ="" class="hero-btn">Send Message at our email</a-->
+
+     </div>
+
+    </section>
+
+ <!--Subject--->
+ <section class="subject">
+     <h1>What we serve:</h1>
+     <p>We strive for the best services for you:</p>
+
+     <div class="row">
+         <div class="subject-col">
+             <h3>Chatbot</h3>
+             <p>Chat with Catto chatbot to consult your cat health's issues</p>
+         </div>
+              <div class="subject-col">
+             <h3>Nearby Location</h3>
+             <p>See nearby location of veterinary clinics, pet shops and many more</p>
+         </div>
+                  <div class="subject-col">
+             <h3>Scan Possible Disease</h3>
+             <p>Upload your cat picture with affected area and see the result!</p>
+         </div>
+
+     </div>
+
+
+ </section>
+
+ <!---email>
+
+ <section-- class="subject-email">
+     <h1> Send for any issues you want to improve in this website </h1>
+
+
+     <div class="row">
+         <div class="email-col">
+             <img src="{{ url_for('static', filename='images/email sned.png') }}">
+             <div class="layer">
+                 <h3>Send to email</h3>
+             </div>
+         </div>
+          <div class="center-box" id="login-div">
+      <h2 >Send message to us!</h2>
+      <div class = "text-field">
+          <input type="text" id = "name" name ="name" placeholder="Your name.." >
+          <input type="text" id="message-email" name="email-message" placeholder="Type your message.."/><br>
+
+      </div>
+        <div class="btn-style">
+                <button id="submit-btn" class="btn-style">Login</button><br>
+        </div>
+          </div>
+
+     </div>
+
+
+ </section-->
+
+ <!---IMages Section with button-->
+
+ <!--section class="services">
+        <h1> The services provide </h1>
+     <p>Send us email</p>
+
+     <div class="row">
+         <div class="services-col">
+             <img src="{{ url_for('static', filename='images/chatbotchat.svg') }}">
+
+                 <h3>Chat with Catto</h3>
+             <p>Instant consulting chat yada2</p>
+         </div>
+                  <div class="services-col">
+             <img src="{{ url_for('static', filename='images/nearbylocation.svg') }}">
+
+                 <h3>Find Nearby Places</h3>
+             <p>Instant consulting chat yada2</p>
+         </div>
+                    <div class="services-col">
+             <img src="{{ url_for('static', filename='images/imageprocessing.svg') }}">
+
+                 <h3>Find Nearby Places</h3>
+             <p>Instant consulting chat yada2</p>
+         </div>
+     </div>
+
+ </section-->
+
+ <section class="footer">
+     <h4>Contact</h4>
+     <p>Reach us through our contact <br>
+    Contact:</p>
+     <div class="icons">
+        <i class="fa-solid fa-envelope"></i>
+         <p>husniyah104@gmail.com</p>
+        <i class="fa-brands fa-square-instagram"></i>
+         <p>@cuny_ny</p>
+     </div>
+        <p>Developed with <i class="fa fa-heart-o"></i> by Nurul Husniyah Binti Ghazali</p>
+      <p>Special thanks <i class="fa fa-heart-o"></i> to Dr. Hizmawati Madzin for supervised this project</p>
+ </section>
+
+ <!------JavaScript for Toggle Menu--->
+<script>
+    var navLinks = document.getElementId("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+       function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>

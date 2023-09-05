@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Catto Care Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+
+    <script src="https://kit.fontawesome.com/ce3b6c6c08.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+ <section class="header">
+
+
+     <div class = "text-box">
+         <h1>Catto Care</h1>
+         <p>Catto Care is a website that deliver instant services for all the cat owners!<br>
+             Catto Care is ready to help you! Click the button below try our website.<br>
+         </p>
+         <a href ="/form" class="hero-btn">Try Catto Care Service</a>
+
+     </div>
+
+    </section>
+
+ <!--Subject--->
+ <section class="subject">
+     <h1>What we serve:</h1>
+
+
+     <div class="row">
+         <div class="subject-col">
+             <h3>Chatbot</h3>
+             <p>Chat with Catto chatbot to consult your cat health's issues</p>
+         </div>
+              <div class="subject-col">
+             <h3>Nearby Location</h3>
+             <p>See nearby location of veterinary clinics, pet shops and many more</p>
+         </div>
+                  <div class="subject-col">
+             <h3>Scan Possible Disease</h3>
+             <p>Upload your cat picture with affected area and see the result!</p>
+         </div>
+
+     </div>
+
+
+ </section>
+
+
+ <!--section class="footer">
+  <h4>Catto Care Services</h4>
+     <p>Catto Care is a website that deliver instant services for all the cat owner! <br>
+
+ </section-->
+
+ <!------JavaScript for Toggle Menu--->
+<script>
+    var navLinks = document.getElementId("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+       function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>

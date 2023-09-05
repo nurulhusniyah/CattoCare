@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Catto Care Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+
+    <script src="https://kit.fontawesome.com/ce3b6c6c08.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+ <section class="header">
+     <nav>
+         <a href = "/home"><img src = "{{ url_for('static', filename='images/CattoLogo.png') }}"></a>
+         <div class="nav-links" id="navLinks">
+             <ul>
+                   <li><a href="home">Home</a></li>
+                     <li><a href="/About">About</a></li>
+                     <li><a href="/Content">Content</a></li>
+                 <li><a href="/">Logout</a></li>
+             </ul>
+         </div>
+
+     </nav>
+
+     <div class = "text-box">
+         <h1>Catto Care</h1>
+         <p>Catto Care is ready to help you! Click the button below try our website. <br>
+         </p>
+         <a href ="Content" class="hero-btn">Start with Catto Care Service</a>
+
+     </div>
+
+    </section>
+
+ <!--Subject--->
+ <!--section-- class="subject">
+     <h1>What we serve:</h1>
+
+
+     <div class="row">
+         <div class="subject-col">
+             <h3>Chatbot</h3>
+             <p>Chat with Catto chatbot to consult your cat's health issues</p>
+         </div>
+              <div class="subject-col">
+             <h3>Nearby Location</h3>
+             <p>See nearby location of veterinary clinics, pet shops and many more</p>
+         </div>
+                  <div class="subject-col">
+             <h3>Detect Possible Skin Issue</h3>
+             <p>Upload your cat picture with the affected area and see the result!</p>
+         </div>
+
+     </div>
+
+
+ </section-->
+
+
+ <!--section class="footer">
+     <h4>About Us</h4>
+     <p>Catto Care is a website that deliver instant services for all the cat owner! <br>
+   <h4>Contact</h4>
+     <p>Reach us through our contact <br>
+    Contact:</p>
+     <div class="icons">
+ <i class="fa-solid fa-envelope"></i>
+         <p>husniyah104@gmail.com</p>
+        <i class="fa-brands fa-square-instagram"></i>
+         <p>@cuny_ny</p>
+     </div>
+ </section-->
+
+ <!------JavaScript for Toggle Menu--->
+<script>
+    var navLinks = document.getElementId("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+       function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>

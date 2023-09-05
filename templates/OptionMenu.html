@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='HomePage.css') }}"/>
+<head>
+<meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Home
+    </title>
+
+       <!--link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    /-->
+
+  <script src="https://kit.fontawesome.com/ce3b6c6c08.js" crossorigin="anonymous"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+
+
+
+</head>
+    <body>
+
+    <section class="header">
+     <nav>
+         <a href = "home.html"><img src = "{{ url_for('static', filename='images/CattoLogo.png') }}"></a>
+         <div class="nav-links" id="navLinks">
+             <ul>
+                    <li><a href="/home">Home</a></li>
+                     <li><a href="/About">About</a></li>
+                     <li><a href="/Content">Content</a></li>
+                 <li><a href="/">Logout</a></li>
+             </ul>
+         </div>
+     </nav>
+
+<div class = "text-box">
+         <h1>Catto Care is Ready To Help!</h1>
+         <p>Need helps to consult your cat? Our vision is to deliver instant services for all<br>
+         cat owners that need consultation. We can give you a few services that might be useful for you and your cat!<br>
+         Check it out!</p>
+
+     </div>
+
+    </section>
+
+ <section class="services">
+        <h1> We provide services such as: </h1>
+     <!--p>Send us email</p-->
+
+     <div class="row">
+         <div class="services-col">
+             <img src="{{ url_for('static', filename='images/chatbotchat.svg') }}">
+                <div class = "box-button" onclick="location.href='chatbot'">
+                         <h3>Chat with Catto</h3>
+             <p>Instant chatting with Catto Bot</p>
+                </div>
+
+         </div>
+                  <div class="services-col">
+             <img src="{{ url_for('static', filename='images/nearbylocation.svg') }}">
+      <div class = "box-button" onclick="location.href='NearbyLoc'">
+                 <h3>Find Nearby Places</h3>
+             <p>Instant finding nearby clinics, pet's shop and many more</p>
+      </div>
+         </div>
+                    <div class="services-col">
+             <img src="{{ url_for('static', filename='images/imageprocessing.svg') }}">
+      <div class = "box-button" onclick="location.href='classify'">
+                 <h3>Scan Possible Issues or Disease</h3>
+             <p>Instant detecting your cat's skin issues</p>
+      </div>
+         </div>
+     </div>
+
+ </section>
+
+
+    <!--div class = "wallpaper">
+
+      <ul class="bar">
+                <li><a href="#" class="active">Home</a></li>
+                <li class="has-dropdown">
+                  <a href="#">About</a>
+                  <ul class="dropdown">
+                    <li><a href="#">The Company</a></li>
+                    <li><a href="#">The Team</a></li>
+                  </ul>
+                </li>
+                </ul>
+
+   <div class="container"></div>
+
+        <div class="MenuBox">
+
+            <img src="{{ url_for('static', filename='images/Location.svg') }}" id="maplocation" onclick="location.href='https://www.google.com/maps/search/?api=1&query=vetrinary clinic near me'"/>
+            <button class="btn" id="mapbutton" onclick="location.href = 'https://www.google.com/maps/search/?api=1&query=vetrinaryclinic'">Find nearby veterinary clinic</button>
+
+             <img src="{{ url_for('static', filename='images/chaticon.svg') }}" id="chatbox" onclick="location.href='chatbot'"/>
+            <button class="btn" id="chatbutton" onclick="location.href = 'chatbot'">Consult with Catto</button>
+
+            <img src="{{ url_for('static', filename='images/camera.svg') }}" id="classify" onclick="location.href='classify'"/>
+            <button class="btn" id="classifybutton" onclick="location.href = 'classify'">Scan Possible Disease</button>
+
+
+
+       </div>
+
+        </div>
+
+
+        </div>
+        </div-->
+
+
+
+    </body>
+</html>

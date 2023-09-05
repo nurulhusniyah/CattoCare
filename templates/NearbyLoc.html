@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='NearbyLoc.css') }}">
+
+    <script src="https://kit.fontawesome.com/ce3b6c6c08.js" crossorigin="anonymous"></script>
+     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+     <script type="text/javascript" src="{{ url_for('static', filename='run.js') }}"></script>
+
+</head>
+<body>
+ <section class="header">
+     <nav>
+         <a href = "home"><img src = "{{ url_for('static', filename='images/CattoLogo.png') }}"></a>
+         <div class="nav-links" id="navLinks">
+             <ul>
+                      <li><a href="/home">Home</a></li>
+                     <li><a href="/About">About</a></li>
+                     <li><a href="/Content">Content</a></li>
+                 <li><a href="/">Logout</a></li>
+             </ul>
+         </div>
+     </nav>
+     <div class = "text-box">
+
+      <h1>Catto Care Location Service</h1>
+         <p>Catto Care is ready to help you! <br>
+             Scroll down to find nearby veterinary clinics, pet's shop and cat's hotel.
+         </p>
+     </div>
+
+    </section>
+
+ <!--Subject--->
+ <section class="subject">
+     <h1>Do you want to search pet's related places near you?</h1>
+     <p>We provide google map location to search your pet's related places:</p>
+
+     <div class="row">
+         <div class="subject-col" onclick=" location.href = 'https://www.google.com/maps/search/?api=1&query=Vetrinary Clinic Near Me'">
+             <h3>Veterinary Clinics</h3>
+             <p>Search for nearby veterinary clinic</p>
+         </div>
+              <div class="subject-col" onclick="location.href = 'https://www.google.com/maps/search/?api=1&query=Nearby Pets Shop'">
+             <h3>Pet's Shop</h3>
+             <p>Search for nearby pet's shop</p>
+         </div>
+                  <div class="subject-col" onclick="location.href = 'https://www.google.com/maps/search/?api=1&query=Nearby cat hotel'">
+             <h3>Cat's Hotel</h3>
+             <p>Search for nearby cat's hotel</p>
+         </div>
+
+
+     </div>
+
+
+ </section>
+
+
+
+ <!------JavaScript for Toggle Menu--->
+<script>
+    var navLinks = document.getElementId("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+       function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>

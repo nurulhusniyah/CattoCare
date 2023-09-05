@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='classify.css') }}">
+
+<head>
+
+     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Scan your cat picture</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+
+
+</head>
+<body>
+
+<section class="header">
+     <nav>
+         <a href = "home"><img src = "{{ url_for('static', filename='images/CattoLogo.png') }}"></a>
+         <div class="nav-links" id="navLinks">
+             <ul>
+                      <li><a href="/home">Home</a></li>
+                     <li><a href="/About">About</a></li>
+                     <li><a href="/Content">Content</a></li>
+                 <li><a href="/">Logout</a></li>
+             </ul>
+         </div>
+     </nav>
+
+     <div class = "text-box">
+         <h1>Detect Your Cat Possible Skin Issues</h1>
+         <h2>Upload your cat's affected area picture and wait the result!</h2>
+  <!-- Image Classification -->
+
+        <div class = "imgupload">
+            <img id="imagePreview"/>
+            <div class="fileInput">
+                   <label for="imageUpload" class ="hero-btn" style="cursor: pointer;">Upload Picture</label>
+              <input type="file"  value="Select File" id="imageUpload" name ="imageUpload" style="display: none;"/>
+                 <p>Please wait until the progress bar is full.</p>
+                <progress class="loading" id =loading value="0" max="100"></progress>
+
+        </div>
+
+            <div id="label-container"></div>
+</div>
+
+<!--p>Catto Care is a website known for providing instant services for all cat owners around the world. You can try not only chat with the Ai chatbot but also <br>
+         scan and predict your cat's health issue by uploading the image.
+         If you are looking for instant services website that you can trust, you have come to the right place. </p-->
+     </div>
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+<script type="text/javascript" src="{{ url_for('static', filename='app.js') }}">
+
+</script>
+
+<!--This is the progress bar -->
+<script>
+  function updateProgress(value) {
+    var progressBar = document.querySelector(".first");
+    progressBar.value = value;
+  }
+</script>
+
+
+<!--div>Teachable Machine Image Model with upload</div-->
+
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript">
+            	var image = document.getElementById('imagePreview');
+                var progressBar = document.getElementById("loading");
+			function readURL(input) {
+
+
+				if (input.files && input.files[0]) {
+					var reader = new FileReader();
+					reader.onload = function (e) {
+						$('#imagePreview').attr('src', e.target.result);
+					    $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+						$('#imagePreview').hide();
+						$('#imagePreview').fadeIn(700);
+						progressBar.value = 20;
+					};
+					reader.readAsDataURL(input.files[0]);
+
+					init().then(() => {
+					  progressBar.value = 100;
+						predict();
+					});
+				}
+			}
+			$('#imageUpload').change(function () {
+				progressBar.value = 50;
+				readURL(this);
+			});
+
+
+
+
+		</script>
+
+                   <!--     setTimeout(() => {
+              // prediction function
+            }, 2000); // delay of 2 seconds
+
+                const spinner = document.getElementById("spinner");
+                spinner.style.display = "block";
+
+                setTimeout(() => {
+                  // prediction function
+                  spinner.style.display = "none";
+                }, 2000);
+
+                            const predict = async (image) => {
+              spinner.style.display = "block";
+              await new Promise(resolve => setTimeout(resolve, 2000));
+              // prediction function
+              spinner.style.display = "none";
+            } -->
+<!-- End of image of classification -->
+
+</body>
+</html>

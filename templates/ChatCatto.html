@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<head>
+ <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chat WIth Catto</title>
+
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+   <section class="header">
+     <nav>
+         <a href = "home"><img src = "{{ url_for('static', filename='images/CattoLogo.png') }}"></a>
+         <div class="nav-links" id="navLinks">
+             <ul>
+                    <li><a href="/home">Home</a></li>
+                     <li><a href="/About">About</a></li>
+                     <li><a href="/Content">Content</a></li>
+                 <li><a href="/form">Logout</a></li>
+             </ul>
+         </div>
+
+     </nav>
+       <div class = "text-box" id="text-box">
+
+         <p>Want to chat with Catto Cat? Click the button start the conversation with Ai Chatbot. <br>
+             [Note: The chatbot only recognized symptoms : rednesss, hair loss, swelling]
+         </p>
+         <a id ="start-button" class="hero-btn">Start</a>
+
+     </div>
+
+
+
+            <div class="container" >
+    <div class="chatbox" id="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/color/512/cat-profile.png" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+
+                    <h4 class="chatbox__heading--header">Chat support</h4>
+
+                    <p class="chatbox__description--header">Hi. My name is Catto. How can I help you?
+                          <a id ="end-button" class="end-btn">End Conversation</a></p>
+
+
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+
+                <button class="chatbox__send--footer send__button" >
+                    <img src="{{ url_for('static', filename='images/send.png') }}" alt="image">
+                </button>
+                <!--End conversation-->
+
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+<!--Call the json file and javascript-->
+    <script>
+        $SCRIPT_ROOT = {{ request.script_root|tojson }};
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}">
+
+    </script>
+
+   </section>
+
+</body>
+
+
+<script>
+
+
+    let startButton = document.getElementById("start-button");
+let chatboxdisplay = document.getElementById("chatbox");
+let textbox = document.getElementById("text-box");
+let endchat = document.getElementById("end-button");
+
+startButton.addEventListener("click", function() {
+    chatboxdisplay.style.display = "flex";
+       textbox.style.display = "none";
+});
+
+endchat.addEventListener("click", function() {
+    chatboxdisplay.style.display = "none";
+       textbox.style.display = "block";
+});
+
+</script>
+</html>

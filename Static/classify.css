@@ -1,0 +1,208 @@
+* {
+  margin:0;
+  padding:0;
+  font-family: 'Poppins', sans serif;
+}
+
+*, html {
+    --primaryGradient: linear-gradient(93.12deg, #416651 0.52%, #EFB07D 100%);
+    --secondaryGradient: linear-gradient(268.91deg, #416651 -2.14%, #0D6E72 99.69%);
+    --primaryBoxShadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    --secondaryBoxShadow: 0px -10px 15px rgba(0, 0, 0, 0.1);
+    --primary: #581B98;
+}
+.header{
+    min-height:100vh;
+    width:100%;
+  background-image: linear-gradient(rgba(4,9,10,0.5), rgba(4,9,10,0.5)), url("images/wallpaper_cattot.png");
+    background-position: center;
+    background-size:cover;
+    position: relative;
+
+}
+
+nav{
+    display: flex;
+    padding: 1% 2%;
+    justify-content: space-between;
+    align-items: center;
+    background:var(--primaryGradient);
+}
+
+nav img{
+    width: 60px;
+
+}
+
+.nav-links{
+    flex:2 ;
+    text-align: left;
+    padding-right: 700px;
+
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 3px 32px;
+    position:relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+
+}
+
+.text-box h2{
+    font-size: 20px;
+    margin-bottom: 310px;
+        font-weight: 100;
+}
+
+.text-box h1{
+    font-size: 35px;
+
+}
+
+
+.imgupload p{
+  margin-bottom: 15px;
+    font-size: 17px;
+    color: #fff;
+    top: 10%;
+    margin-top:25px;
+}
+
+.hero-btn{
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #416651;
+    transition: 1s;
+
+}
+
+.container{
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#label-container{
+
+    text-align: center;
+    top: 123%;
+    position: absolute;
+ }
+
+.error-text {
+margin-left:50px;
+}
+
+
+.imgupload{
+    top: 55%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+
+.imgupload img{
+  width: 200px;
+  height: 200px;
+  display: flex;
+   margin: auto;
+
+}
+
+.container h3{
+    margin-bottom: 400px;
+    text-align: center;
+    font-size: 22px;
+    color: #000;
+}
+
+.fileInput{
+
+    width: 300px;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.fileInput label{
+    cursor: pointer;
+    border-style: solid;
+    background: #cccc;
+    border-radius: 10px;
+    border-width: thin;
+    background-color: #0D6E72;
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    transition: transform 0.2s ease;
+
+}
+
+.fileInput label: hover{
+transform: scale(1.2);
+}
+
+.loading {
+overflow: hidden;
+  border-radius: 15px;
+  border: 1px solid black;
+  color:#416651;
+  height: 20px;
+  width: 250px;
+}
+
+.loading::-webkit-progress-bar {
+  background-color: white;
+  border-radius: 15px;
+}
+
+.loading::-webkit-progress-value {
+  background-color: #416651;
+  border-radius: 15px;
+}

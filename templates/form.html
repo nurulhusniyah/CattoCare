@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign In</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='form.css') }}">
+    <script type="module" src="{{ url_for('static', filename='form.mjs') }}"></script>
+  </head>
+  <body>
+
+  <!---Section header-->
+
+   <section class="header">
+
+
+     <div class = "text-box">
+          <h1>Catto Care Consultation Services</h1>
+         <!--h1 style="margin:auto", >Sign In</h1-->
+  <div class="center-box" id="login-div">
+      <h2 >Login</h2>
+      <div class = "text-field">
+                <input type="email" id="login-email" name="login-email" placeholder="Email" required/><br>
+      <input type="password" id="login-password" name="login-password" placeholder="Password" required/><br>
+      </div>
+        <div class="btn-style">
+                <button id="login-btn" class="btn-style">Login</button><br>
+        </div>
+
+      <button id="reg-btn" class="an-btn">don't have an account? Click here</button>
+   </div>
+
+   <div class="center-box" id="register-div">
+     <h2>Register</h2>
+          <div class = "text-field">
+     <input type="email" id="register-email" name="register-email" placeholder="Email" required/><br>
+
+     <input type="password" id="register-password"  name="register-password" placeholder="Password" required/><br>
+
+          </div>
+    <div class="btn-style">
+    <button id="register-btn" class="btn-style">Register</button><br>
+           </div>
+     <button id="log-btn" class="an-btn">have an account? Click here</button>
+
+  </div>
+
+
+<div id="result-box">
+  <h3 id="result"></h3><br>
+     <button id="log-out-btn" class="btn-style-start" onclick="location.href='OptionMenu'">START</button>
+</div>
+
+
+     </div>
+
+    </section>
+  <!---Section header-->
+
+
+  </body>
+  </html>
