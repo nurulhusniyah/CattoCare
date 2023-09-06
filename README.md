@@ -10,11 +10,11 @@ This is the Final Year Project for system that provide a consultation for cats t
 ![Image Alt Text](Flowchart_CattoCare.drawio.png)
 
 #This is the result of the website development:
-![Image Alt Text](catto2)
+![Image Alt Text](catto2.png)
 
-![Image Alt Text](catto3)
+![Image Alt Text](catto3.png)
 
-![Image Alt Text](catto3)
+![Image Alt Text](catto3.png)
 
 
 
