@@ -14,7 +14,7 @@ This is the Final Year Project for system that provide a consultation for cats t
 
 ![Image Alt Text](catto3.png)
 
-![Image Alt Text](catto3.png)
+![Image Alt Text](options.png)
 
 
 
