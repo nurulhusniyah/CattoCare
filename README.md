@@ -1,4 +1,3 @@
-# CattoCare
 
 # Project Title: CattoCare - A Pet Consultation Website for Cats
 
